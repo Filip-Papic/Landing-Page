@@ -44,6 +44,9 @@ body {
   right: 0;
   z-index: 999;
   transition: background-color 0.5s ease;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 40s ease infinite;
   opacity: 0.9;
   padding: 2rem;
   width: 100%;
@@ -206,12 +209,13 @@ body {
   }
 }
 
-/* Section 1: Hero */
+/* Sections */
 .section {
   height: 100vh;
   border: 1px solid #ddd;
 }
 
+/* Section 1: Hero */
 .section__hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -226,7 +230,7 @@ body {
   animation: gradient 40s ease infinite;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .section__hero {
     height: 100%;
   }
@@ -330,6 +334,124 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* Section 2: About */
+.section__about {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .section__about {
+    height: 100%;
+    padding-bottom: 5rem;
+  }
+}
+
+.section__about .section__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.section__about .section__text span {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 40s ease infinite;
+}
+
+.section__about .section__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 0;
+  color: #333;
+  padding: 0 5rem;
+}
+
+.section__about .section__content .section__content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.3rem #e73c7e;
+}
+
+.section__about .section__content .section__content-item:hover {
+  transition: all 0.3s;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 1rem #ee7752;
+}
+
+.section__about .section__content .about__image {
+  width: 200px;
+  height: 200px;
+}
+
+.section__about .section__content .about__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.section__about .section__content .section__content-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+
+.section__about .section__content .section__content-text {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+}
+
+
+/* Divider */
+.divider {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 40s ease infinite;
+  height: 90px;
+}
+
+.hero__divider {
+  background: #333;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero__divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+
+.hero__divider .shape-fill {
+  fill: #f2f2f2;
+}
+
+
+
+
+
 
 /* Blobs  https://toruskit.com/tools/blobz */
 .tk-blob {
