@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page" />
+    <title>Landing Page</title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
@@ -12,14 +14,20 @@
       href="https://fonts.googleapis.com/css?family=Bungee"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Landing Page</title>
   </head>
   <body>
     <div class="container">
       <!-- Header -->
       <header class="header">
-        <div class="header__logo">
+        <a class="header__logo" href="#">
           <svg
             width="32"
             height="32"
@@ -29,7 +37,7 @@
           >
             <rect width="32" height="32" rx="16" fill="#FFC107" /></svg
           >&nbsp;LOGO
-        </div>
+        </a>
         <div class="header__mobile">
           <div class="ham">
             <span></span>
@@ -42,10 +50,13 @@
                 <a href="#" class="header__nav-link">Home</a>
               </li>
               <li class="header__mobile-item">
-                <a href="#" class="header__nav-link">About</a>
+                <a href="#section-2" class="header__nav-link">About</a>
               </li>
               <li class="header__mobile-item">
-                <a href="#" class="header__nav-link">Contact</a>
+                <a href="#section-3" class="header__nav-link">Services</a>
+              </li>
+              <li class="header__mobile-item">
+                <a href="#section-4" class="header__nav-link">Payment</a>
               </li>
               <li class="header__mobile-item">
                 <button class="header__nav-button">Something</button>
@@ -59,10 +70,13 @@
               <a href="#" class="header__nav-link">Home</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">About</a>
+              <a href="#section-2" class="header__nav-link">About</a>
             </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Contact</a>
+            <li class="header__mobile-item">
+              <a href="#section-3" class="header__nav-link">Services</a>
+            </li>
+            <li class="header__mobile-item">
+              <a href="#section-4" class="header__nav-link">Payment</a>
             </li>
             <li class="header__nav-item">
               <button class="header__nav-button">Something</button>
@@ -81,7 +95,7 @@
           <button class="section__button">Click me</button>
         </div>
         <div class="hero__image">
-          <img src="images/hero.png" alt="hero" />
+          <img src="img/hero.png" alt="hero" />
           <div
             class="tk-blob hero-blob"
             style="--time: 10s; --amount: 5; --fill: #f1c40f"
@@ -94,13 +108,14 @@
           </div>
         </div>
       </section>
+
       <!-- About -->
       <section class="section section__about" id="section-2">
         <h2 class="section__text">Why go<span>&nbsp;Lorem</span>?</h2>
         <div class="section__content">
           <div class="section__content-item">
             <div class="about__image">
-              <img src="images/about-1.png" alt="about-1" />
+              <img src="img/about-1.png" alt="about-1" />
             </div>
             <h3 class="section__content-title">Lorem ipsum dolor sit amet</h3>
             <p class="section__content-text">
@@ -111,7 +126,7 @@
           </div>
           <div class="section__content-item">
             <div class="about__image">
-              <img src="images/about-2.png" alt="about-2" />
+              <img src="img/about-2.png" alt="about-2" />
             </div>
             <h3 class="section__content-title">Lorem ipsum dolor sit amet</h3>
             <p class="section__content-text">
@@ -122,7 +137,7 @@
           </div>
           <div class="section__content-item">
             <div class="about__image">
-              <img src="images/about-3.png" alt="about-3" />
+              <img src="img/about-3.png" alt="about-3" />
             </div>
             <h3 class="section__content-title">Lorem ipsum dolor sit amet</h3>
             <p class="section__content-text">
@@ -133,26 +148,209 @@
           </div>
         </div>
       </section>
-      <!-- Divider -->
-      <div class="divider">
-        <div class="hero__divider">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
+
+      <!-- First divider -->
+      <div class="divider first__divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
 
-      <section class="section" id="section-3">Section 3</section>
-      <section class="section" id="section-4">Section 4</section>
-      <footer class="footer">Footer</footer>
+      <!-- Services -->
+      <section class="section section__services" id="section-3">
+        <div class="section__content">
+          <div class="service section__content-item slide-right">
+            <div class="services__image">
+              <img src="img/about-1.png" alt="services-1" />
+            </div>
+            <p class="section__content-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              voluptates, quod, quia, voluptas quae voluptatem quibusdam
+              voluptatum quos quas quidem nesciunt.
+            </p>
+          </div>
+          <div class="service section__content-item slide-left">
+            <p class="section__content-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              voluptates, quod, quia, voluptas quae voluptatem quibusdam
+              voluptatum quos quas quidem nesciunt.
+            </p>
+            <div class="services__image">
+              <img src="img/about-2.png" alt="services-2" />
+            </div>
+          </div>
+          <div class="service section__content-item slide-right">
+            <div class="services__image">
+              <img src="img/about-3.png" alt="services-3" />
+            </div>
+            <p class="section__content-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              voluptates, quod, quia, voluptas quae voluptatem quibusdam
+              voluptatum quos quas quidem nesciunt.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second divider -->
+      <div class="divider second__divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Pricing -->
+      <section class="section section__payment" id="section-4">
+        <h2 class="section__title">Pricing</h2>
+        <div class="section__content">
+          <div class="section__content-item">
+            <h3 class="section__content-title">
+              Lorem ipsum dolor sit amet
+              <small class="section__content-small">
+                Lorem ipsum dolor sit amet
+              </small>
+            </h3>
+            <h1 class="section__content-price">Free</h1>
+            <button class="section__content-button">Buy Now</button>
+            <ul class="section__content-list">
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ✔
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ❌
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ❌
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ❌
+              </li>
+            </ul>
+          </div>
+          <div class="section__content-item">
+            <div class="ribbon"><span>BEST VALUE</span></div>
+            <h3 class="section__content-title">
+              Lorem ipsum dolor sit amet
+
+              <small class="section__content-small"
+                >Lorem ipsum dolor sit amet</small
+              >
+            </h3>
+            <h1 class="section__content-price">$ 49.99</h1>
+            <button class="section__content-button">Buy Now</button>
+            <ul class="section__content-list">
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ✔
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ✔
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ❌
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ❌
+              </li>
+            </ul>
+          </div>
+          <div class="section__content-item">
+            <h3 class="section__content-title">
+              Lorem ipsum dolor sit amet
+
+              <small class="section__content-small"
+                >Lorem ipsum dolor sit amet</small
+              >
+            </h3>
+            <h1 class="section__content-price">$ 99.99</h1>
+            <button class="section__content-button">Buy Now</button>
+            <ul class="section__content-list">
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ✔
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ✔
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ✔
+              </li>
+              <li class="section__content-list-item">
+                Lorem ipsum dolor sit amet ✔
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__content-item">
+            <h3 class="footer__content-title">Contact Us</h3>
+            <ul class="footer__content-list">
+              <li class="footer__content-list-item">
+                <i class="fas fa-map"></i> 1234 Street Name, City Name, Country
+              </li>
+              <li class="footer__content-list-item">
+                <i class="fas fa-phone"></i> (123) 456-7890
+              </li>
+              <li class="footer__content-list-item">
+                <i class="fas fa-envelope"></i>
+                email@email.com
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content-item">
+            <h3 class="footer__content-title">About Us</h3>
+            <ul class="footer__content-list">
+              <li class="footer__content-list-item">
+                <a href="#" class="footer__content-link">Company</a>
+              </li>
+              <li class="footer__content-list-item">
+                <a href="#" class="footer__content-link">Team</a>
+              </li>
+              <li class="footer__content-list-item">
+                <a href="#" class="footer__content-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content-item">
+            <h3 class="footer__content-title">Follow Us</h3>
+            <div class="footer__content-social">
+              <a href="#" class="footer__content-social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer__content-social-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="footer__content-social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="footer__content-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <small class="footer__copy">
+          © 2022 Company Name. All rights reserved.
+        </small>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
