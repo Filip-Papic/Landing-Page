@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  position: relative;
   overscroll-behavior-y: none;
   background-attachment: fixed;
   font-family: "Popins", sans-serif;
@@ -32,6 +33,7 @@ body {
   background-color: rgba(0, 0, 0, 0);
   background-size: 400% 400%;
   animation: gradient 40s ease infinite;
+  overflow-x: hidden;
 }
 
 .container {
@@ -776,12 +778,6 @@ body {
   gap: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .footer .footer__content {
-    justify-items: start;
-  }
-}
-
 .footer .footer__content-item {
   display: flex;
   flex-direction: column;
@@ -810,6 +806,16 @@ body {
   color: var(--white);
   text-decoration: none;
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__content {
+    justify-items: start;
+  }
+
+  .footer .footer__content-item {
+    align-items: start;
+  }
 }
 
 .footer .footer__content-list a:hover {
